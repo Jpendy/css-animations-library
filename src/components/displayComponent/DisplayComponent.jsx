@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import reactHtmlParser from 'react-html-parser'
 import SelectClass from '../../components/selectClass/SelectClass'
-import gridClasses from '../../data/grid-classes.js'
-// import './GridsContainer.css'
+import './DisplayComponent.css'
 import '../../styles/grids.css'
+import '../../styles/animations.css'
 
 export default function DisplayComponent({ classArray }) {
 
-    const [cssClass, setCssClass] = useState('grid-1')
+    const [cssClass, setCssClass] = useState('original')
 
     const handleSelectOptionChange = (e) => {
         setCssClass(e.target.value)

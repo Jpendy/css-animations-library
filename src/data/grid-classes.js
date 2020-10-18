@@ -1,5 +1,10 @@
 export default [
     {
+        className: 'original',
+        html: ``,
+        css: ``,
+    },
+    {
         className: 'grid-1',
         html: `
         <div class="grid-1-container" >

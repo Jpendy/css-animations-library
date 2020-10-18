@@ -1,44 +1,13 @@
 export default [
     {
         className: 'original',
-        css: `code code code`
-    },
-
-    {
-        className: 'wobble',
-        css: `.wobble {
-            animation: wobble 2s linear infinite;
-        }
-
-        @keyframes wobble {
-            20% {
-            transform: translateX(-50px);
-            transform: scale(1.2)
-            }
-            40% {
-                transform: translateY(-50px);
-                transform: scale(.4);
-            }
-            55% {
-                transform: translateX(200px);
-            } 
-            70% {
-                transform: scale(.4);
-            }
-            80% {
-                transform: translateY(-50px);
-        
-            }
-        }`
-    },
-    {
-        className: 'blue-background',
-        css: ``
+        html: ``,
+        css: `code code code`,
     },
     {
         className: 'radiate',
         html: `
-        <div class="radiate main-element">1</div>
+        <div class="radiate box"></div>
         `,
         css: `.radiate {
             animation: radiate 1.5s infinite ease-in-out;
@@ -64,6 +33,9 @@ export default [
     },
     {
         className: 'spin',
+        html: `
+        <div class="spin box"></div>
+        `,
         css: `.spin {
             animation: spin 20s infinite linear;
 
