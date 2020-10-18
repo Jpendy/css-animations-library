@@ -47,6 +47,9 @@
 .black-background {
     height: 250px;
     width: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background: black;
 }
@@ -98,10 +101,10 @@
 }
 .flame-wrapper {
     background: black;
-    position: absolute;
+    position: relative;
     animation: flicker 3ms ease-in infinite;
-    top: 54.5%;
-    left: 47.7%;
+    top: 20%;
+    left: -38px;
 }
 .flame {
     bottom: 0;

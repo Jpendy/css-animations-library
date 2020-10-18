@@ -67,17 +67,18 @@ export default [
         .black-background {
             height: 250px;
             width: 250px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
             border-radius: 50%;
             background: black;
         }
-
         .flame-red {
             width: 80px;
             height: 80px;
             background: orangered;
             box-shadow: 0px 0px 10px 5px orangered;
         }
-
         .flame-orange {
             left: 10px;
             width: 60px;
@@ -85,7 +86,6 @@ export default [
             background: orange;
             box-shadow: 0px 0px 12px 6px orange;
         }
-
         .flame-gold {
             left: 18px;
             width: 45px;
@@ -93,7 +93,6 @@ export default [
             background: gold;
             box-shadow: 0px 0px 9px 4px gold;
         }
-
         .flame-white {
             left: 22px;
             width: 35px;
@@ -101,7 +100,6 @@ export default [
             background: lightyellow;
             box-shadow: 0px 0px 9px 4px lightyellow;
         }
-
         .flame-blue {
             left: 32px;
             width: 15px;
@@ -109,7 +107,6 @@ export default [
             background: darkblue;
             box-shadow: 0px 0px 15px 10px darkblue;
         }
-
         .flame-black {
             left: 20px;
             width: 40px;
@@ -118,27 +115,23 @@ export default [
             background: black;
             box-shadow: 0px 0px 15px 10px black;
         }
-
         .base {
             border-radius: 50%;
             position: absolute;
         }
-        
         .flame-wrapper {
             background: black;
-            position: absolute;
+            position: relative;
             animation: flicker 3ms ease-in infinite;
-            top: 54.5%;
-            left: 47.7%;
+            top: 20%;
+            left: -38px;
         }
-
         .flame {
             bottom: 0;
             position: absolute;
             border-radius: 50% 0% 50% 50%;
             transform: rotate(-45deg);
         }
-
         @keyframes flicker {
             0% {transform: rotate(-1deg);}
             20% {transform: rotate(2deg) scaleY(1.05);}
@@ -146,6 +139,7 @@ export default [
             60% {transform: rotate(1deg);}
             80% {transform: rotate(-1deg) scaleY(0.90);}
             100% {transform: rotate(1deg);}
-        }`
+        }
+        `
     },
 ]
