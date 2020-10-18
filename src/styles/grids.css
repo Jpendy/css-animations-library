@@ -2,6 +2,8 @@
 .grid-1-container{
     height: 800px;
     width: 1400px;
+    background: lightcyan;
+    padding: 40px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
@@ -29,6 +31,8 @@
 .grid-2-container {
     height: 800px;
     width: 1400px;
+    background: lightcyan;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
@@ -36,7 +40,7 @@
     "leftSide leftSide upperMid upperMid upperMid upperMid rightSide rightSide"
     "leftSide leftSide lowerMid lowerMid lowerMid lowerMid rightSide rightSide"
     "footer footer footer footer footer footer footer footer";
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 .grid-2-box-1 {
     grid-area: header;
