@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import reactHtmlParser from 'react-html-parser'
 import SelectClass from '../../components/selectClass/SelectClass'
-import animationClasses from '../../animation-classes.js'
-import './MainContainer.css'
+import gridClasses from '../../data/grid-classes.js'
+// import './GridsContainer.css'
 import '../../styles/grids.css'
-// import Options from '../../components/options/SelectOption'
 
-export default function MainContainer() {
+export default function DisplayComponent({ classArray }) {
 
-    const [cssClass, setCssClass] = useState('original')
+    const [cssClass, setCssClass] = useState('grid-1')
 
     const handleSelectOptionChange = (e) => {
         setCssClass(e.target.value)
@@ -18,12 +17,12 @@ export default function MainContainer() {
         <>
             <main id="main">
                 <div className="select-div" >
-                    <SelectClass handleChange={handleSelectOptionChange} />
+                    <SelectClass classArray={classArray} handleChange={handleSelectOptionChange} />
                 </div>
                 <section className="top-section" >
 
                     <div className="elements-div" >
-                        {reactHtmlParser(animationClasses.find(item => item.className === cssClass).html)}
+                        {reactHtmlParser(classArray.find(item => item.className === cssClass).html)}
                     </div>
 
                 </section>
@@ -31,14 +30,14 @@ export default function MainContainer() {
                 <section className="html-code-section" >
                     <pre>
                         <h2>HTML</h2>
-                        {animationClasses.find(item => item.className === cssClass).html}
+                        {classArray.find(item => item.className === cssClass).html}
                     </pre>
                 </section>
 
                 <section className="css-code-section">
                     <pre>
                         <h2>CSS</h2>
-                        {animationClasses.find(item => item.className === cssClass).css}
+                        {classArray.find(item => item.className === cssClass).css}
                     </pre>
                 </section>
 
