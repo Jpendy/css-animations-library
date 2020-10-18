@@ -1,18 +1,14 @@
-html {
-  height: 100%;
+* {
+  box-sizing: border-box;
 }
 
-body {
+
+
+body, html {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
   background: rgb(179, 225, 253)
 
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
