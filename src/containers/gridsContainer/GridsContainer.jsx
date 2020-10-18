@@ -5,7 +5,6 @@ import './GridsContainer.css'
 
 export default function GridsContainer() {
 
-
     return (
         <>
             <DisplayComponent classArray={gridClasses} />
