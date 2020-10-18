@@ -43,7 +43,7 @@
   }
 
 
-
+/* flickering flame animation */
 .black-background {
     height: 250px;
     width: 250px;
@@ -119,4 +119,59 @@
     60% {transform: rotate(1deg);}
     80% {transform: rotate(-1deg) scaleY(0.90);}
     100% {transform: rotate(1deg);}
+}
+
+
+/* neon text outline animation  */
+.txt {
+    color: #ffffff;
+    background:#000000;
+    font-size:200px;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+.txt::before {
+    content: 'Neon Outline';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.neon-wrapper {
+    width: 100%;
+    padding: 50px;
+    background: black;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline-flex;
+    filter: brightness(300%);
+    overflow: hidden;
+}
+.gradient{
+    background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250,1) 4.92708334%,rgba(229, 151, 64,1) 97.8437499%);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+.dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position: absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+@keyframes dodge-area {
+    to {
+        transform: translate(50%,50%);
+    }
 }

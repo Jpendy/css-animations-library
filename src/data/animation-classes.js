@@ -142,4 +142,70 @@ export default [
         }
         `
     },
+    {
+        className: 'neon-text-outline',
+        html: `
+        <div class="neon-black-background" >
+            <div class="neon-wrapper">
+                <span class="txt" >Neon Outline</span>
+                <span class="gradient"></span>
+                <span class="dodge"></span>
+            </div>
+        </div>
+        `,
+        css: `
+        .txt {
+            color: #ffffff;
+            background:#000000;
+            font-size:200px;
+            font-weight: bold;
+            font-family: Arial;
+            text-transform: uppercase;
+        }
+        .txt::before {
+            content: 'hey';
+            position: absolute;
+            mix-blend-mode: difference;
+            filter: blur(3px);
+        }
+        .neon-wrapper {
+            width: 600px;
+            background: black;
+            display: grid;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display:inline-flex;
+            filter: brightness(300%);
+            overflow: hidden;
+        }
+        .gradient{
+            background: linear-gradient(114.5793141156962deg, 
+            rgba(6, 227, 250,1) 4.92708334%,rgba(229, 151, 64,1) 97.8437499%);
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height:100%;
+            mix-blend-mode: multiply;
+        }
+        .dodge {
+            background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+            position: absolute;
+            top:-100%;
+            left:-100%;
+            right:0;
+            bottom:0;
+            mix-blend-mode: color-dodge;
+            animation: dodge-area 3s linear infinite;
+        }
+        @keyframes dodge-area {
+            to {
+                transform: translate(50%,50%);
+            }
+        }
+        `
+    },
 ]
