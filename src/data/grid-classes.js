@@ -1,11 +1,11 @@
 export default [
     {
-        className: 'original',
+        className: 'Original',
         html: ``,
         css: ``,
     },
     {
-        className: 'grid-1',
+        className: 'Grid-1',
         html: `
         <div class="grid-1-container" >
             <div class="grid-1-box-1"> </div>
@@ -44,7 +44,7 @@ export default [
         }`
     },
     {
-        className: 'grid-2',
+        className: 'Grid-2',
         html: `
         <div class="grid-2-container" >
             <div class="grid-2-box-1"> </div>

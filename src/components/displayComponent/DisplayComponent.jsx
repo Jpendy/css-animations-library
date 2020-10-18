@@ -7,7 +7,7 @@ import '../../styles/animations.css'
 
 export default function DisplayComponent({ classArray }) {
 
-    const [cssClass, setCssClass] = useState('original')
+    const [cssClass, setCssClass] = useState('Original')
 
     const handleSelectOptionChange = (e) => {
         setCssClass(e.target.value)
