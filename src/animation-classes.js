@@ -61,10 +61,10 @@ export default [
             grid-template-columns: repeat(8, 1fr);
             grid-template-areas: 
             "header header header header header header header header"
-            "leftSide upperMid upperMid upperMid upperMid upperMid upperMid rightSide"
-            "leftSide lowerMid lowerMid lowerMid lowerMid lowerMid lowerMid rightSide"
+            "leftSide leftSide upperMid upperMid upperMid upperMid rightSide rightSide"
+            "leftSide leftSide lowerMid lowerMid lowerMid lowerMid rightSide rightSide"
             "footer footer footer footer footer footer footer footer";
-            grid-gap: 20px;
+            grid-gap: 30px;
         }
         
         .grid-2-box-1 {

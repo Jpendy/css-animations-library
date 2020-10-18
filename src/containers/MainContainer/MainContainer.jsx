@@ -3,6 +3,7 @@ import reactHtmlParser from 'react-html-parser'
 import SelectClass from '../../components/selectClass/SelectClass'
 import animationClasses from '../../animation-classes.js'
 import './MainContainer.css'
+import '../../styles/grids.css'
 // import Options from '../../components/options/SelectOption'
 
 export default function MainContainer() {
