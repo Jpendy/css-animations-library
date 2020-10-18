@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import SelectOptions from '../../components/options/SelectOption'
+import SelectClass from '../../components/selectClass/SelectClass'
+import animationClasses from '../../animation-classes.js'
 import './MainContainer.css'
 // import Options from '../../components/options/SelectOption'
 
@@ -13,15 +14,25 @@ export default function MainContainer() {
 
     return (
         <>
-            <main id="main" >
+            <main id="main">
 
-                <select onChange={handleSelectOptionChange} >
-                    <SelectOptions />
-                </select>
+                <section className="top-section" >
 
-                <div id="main-element" className={`main-element original-background-color ${cssClass}`} >
-                    MAIN ELEMENT
-                </div>
+                    <div className="select-div" >
+                        <SelectClass handleChange={handleSelectOptionChange} />
+                    </div>
+                    <div id="main-element" className={`main-element original-background-color ${cssClass}`} >
+                        MAIN ELEMENT
+                    </div>
+
+                </section>
+
+                <section className="code-section">
+                    <pre>
+                        {animationClasses.find(item => item.className === cssClass).code}
+                    </pre>
+                </section>
+
 
             </main>
         </>

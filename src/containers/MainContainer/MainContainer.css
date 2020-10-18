@@ -1,13 +1,30 @@
 
-#main {
-    height: 700px;
-    display: flex;
+
+.top-section {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
 }
 
-select {
-    height: 100px;
+.select-div {
+    grid-column: 3 / 4;
+}
+
+.code-section {
+    display: flex;
+    justify-content: center;
+}
+
+pre {
+    padding: 20px 60px 20px 60px;
+    border: 5px solid blue;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(orange, yellow);
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 #main-element {
@@ -18,7 +35,7 @@ select {
     height: 300px;
     width: 300px;
     border: 5px solid blue;
-    border-radius: 40px;
+    border-radius: 50%;
     font-size: 30px;
     font-weight: bold;
     font-family: monospace;

@@ -1,0 +1,11 @@
+
+select {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
