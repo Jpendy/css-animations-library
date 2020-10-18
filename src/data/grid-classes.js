@@ -93,12 +93,4 @@ export default [
             background: lightseagreen;
         }`
     },
-    // {
-    //     className: 'divs',
-    //     html: `<div class="div-1 thing" >1</div>
-    //            <div class="div-2 thing" >2</div>
-    //            <div class="div-3 thing" >3</div>
-    //            <div class="div-4 thing" >4</div>`,
-    //     css: `code code code`
-    // },
 ]
