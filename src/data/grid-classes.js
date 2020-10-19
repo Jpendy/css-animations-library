@@ -8,13 +8,19 @@ export default [
         className: 'Grid-1',
         html: `
         <div class="grid-1-container" >
-            <div class="grid-1-box-1"> </div>
-            <div class="grid-1-box-2"> </div>
-            <div class="grid-1-box-3"> </div>
-            <div class="grid-1-box-4"> </div>
+            <div class="grid-box grid-1-box-1">1</div>
+            <div class="grid-box grid-1-box-2">2</div>
+            <div class="grid-box grid-1-box-3">3</div>
+            <div class="grid-box grid-1-box-4">4</div>
         </div>
         `,
         css: `
+        .grid-box {
+            display: grid;
+            text-align: center;
+            border: 1px solid black;
+        }
+
         .grid-1-container{
             height: 800px;
             width: 1400px;
@@ -47,15 +53,21 @@ export default [
         className: 'Grid-2',
         html: `
         <div class="grid-2-container" >
-            <div class="grid-2-box-1"> </div>
-            <div class="grid-2-box-2"> </div>
-            <div class="grid-2-box-3"> </div>
-            <div class="grid-2-box-4"> </div>
-            <div class="grid-2-box-5"> </div>
-            <div class="grid-2-box-6"> </div>
+            <div class="grid-box grid-2-box-1"> </div>
+            <div class="grid-box grid-2-box-2"> </div>
+            <div class="grid-box grid-2-box-3"> </div>
+            <div class="grid-box grid-2-box-4"> </div>
+            <div class="grid-box grid-2-box-5"> </div>
+            <div class="grid-box grid-2-box-6"> </div>
         </div>
         `,
         css: `
+        .grid-box {
+            display: grid;
+            text-align: center;
+            border: 1px solid black;
+        }
+
         .grid-2-container {
             height: 800px;
             width: 1400px;
@@ -93,6 +105,101 @@ export default [
         .grid-2-box-6 {
             grid-area: footer;
             background: lightseagreen;
+        }
+        `
+    },
+    {
+        className: 'Grid-3',
+        html: `
+        <div class="grid-3-container" >
+            <div class="blue grid-box grid-3-box-1">1</div>
+            <div class="yellow grid-box grid-3-box-2">2</div>
+            <div class="lightgreen grid-box grid-3-box-3">3</div>
+            <div class="orchid grid-box grid-3-box-4">4</div>
+        </div>
+        `,
+        css: `
+        .grid-box {
+            display: grid;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .grid-3-container {
+            height: 800px;
+            width: 1400px;
+            background: lightcyan;
+            padding: 40px;
+            grid-gap: 30px;
+        }
+
+        .grid-3-box-1 {
+            grid-column: 1 / span 2
+        }
+
+        .grid-3-box-2 {
+            grid-column: 3 / span 1;     
+            grid-row: 1 / span 2
+        }
+
+        .grid-3-box-3 {
+            grid-column: 1 / span 1
+        }
+
+        .grid-3-box-4 {
+            grid-column: 2 / span 1
+        }
+        `
+    },
+    {
+        className: 'Grid-4',
+        html: `
+        <div class="grid-4-container" >
+            <div class="blue grid-box grid-4-box-1">1</div>
+            <div class="yellow grid-box grid-4-box-2">2</div>
+            <div class="lightgreen grid-box grid-4-box-3">3</div>
+            <div class="orchid grid-box grid-4-box-4">4</div>
+            <div class="orange grid-box grid-4-box-5">5</div>
+
+        </div>
+        `,
+        css: `
+        .grid-box {
+            display: grid;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .grid-4-container {
+            height: 800px;
+            width: 1400px;
+            background: lightcyan;
+            padding: 40px;
+            grid-gap: 30px;
+        }
+        
+        .grid-4-box-1 {
+            grid-column: 1 / span 4
+        }
+        
+        .grid-4-box-2 {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 2
+        }
+        
+        .grid-4-box-3 {
+            grid-column: 3 / span 2;
+            grid-row: 2 / span 1
+        }
+        
+        .grid-4-box-4 {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1
+        }
+        
+        .grid-4-box-5 {
+            grid-column: 4 / span 1;
+            grid-row: 3 / span 1
         }
         `
     },
